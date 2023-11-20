@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="U Ciebie robimy jak u siebie" />
+    <meta name="keywords" content="Wykończenia, budowlanka, remont, " />
+    <meta name="author" content="Daniel Enz" />
+    <title>Venz</title>
+
+    <script
+      src="https://kit.fontawesome.com/0ab53e064e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="icon"
+      href="../src/img/screwdriver-wrench-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+  </head>
+  <body>
+    <nav class="nav-desktop none">
+    
+    <a class="logo-link" href="#home"> <img src="./src/img/Venz.png" alt="logo Venz"> </a>
+
+
+    <div class="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#services">Usługi</a>
+        <a class="nav-link" href="#realizations">Realizacje</a>
+        <a class="nav-link" href="#gallery " onclick="window.location.href='galleryPage.html'">Galeria</a>
+        <a class="nav-link" href="#contact" onclick="window.location.href='contactPage.html'">Kontakt</a>
+    </div>  
+</nav>
+
+<nav class="nav-mobile">
+    <button class="burger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times hide"></i>
+    </button>
+    <ul>
+        <li><a href="#home" onclick="removeVisibleClass()">Home</a></li>
+        <li><a href="#services" onclick="removeVisibleClass()">Usługi</a></li>
+        <li><a href="#realizations" onclick="removeVisibleClass()">Realizacje</a></li>
+        <li><a href="#gallery" onclick="window.location.href='galleryPage.html'">Galeria</a></li>
+        <li><a href="#contact"  onclick="window.location.href='contactPage.html' ">Kontakt</a></li>
+    </ul>
+</nav>
+
+
+
+
+    <section class="header" id="home">
+      <header>
+        <div class="hero-img">
+          <div class="hero-shadow"></div>
+          <div class="hero-text">
+            <p>Firma Venz</p>
+            <h1>Twój wymarzony remont od A do Z</h1>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section class="services" id="services">
+        <div class="services-title">
+          <h1>usługi</h1>
+          <h2>Prace które możemy dla ciebie wykonać</h2>
+        </div>
+
+        <div class="card-box">
+          <div class=" main-card">
+            <img src="dist/img/płytki.min.jpg" alt="Układanie płytek" />
+            <div class="card-body">
+              <h2>Flizowanie/układanie płytek</h2>
+              <p>
+                Flizowanie to nic innego jak układanie płytek ceramicznych,
+                kamienia naturalnego lub sztucznego, a także innych materiałów
+                wykończeniowych. Prace obejmują przygotowanie podłoża, układanie
+                płytek, wyrównywanie powierzchni, zaprawianie fug i wykończenie.
+              </p>
+            </div>
+          </div>
+          <div class=" main-card">
+            <img src="dist/img/malowanie.min.jpg" alt="Malowanie" />
+            <div class="card-body">
+              <h2>Malowanie</h2>
+              <p>
+                Malowanie to czynność nie tak prosta jak się wydaje, jednak jest
+                to jedna z naszych specjalności. Dobry malarz pokojowy to
+                podstawa udanego malowania. Bardzo ważnym jest zabezpieczyć
+                wszystkie elementy pomieszczenia takie jak meble, podłoga czy
+                też inne ściany przed plamami z farby.
+              </p>
+            </div>
+          </div>
+          <div class=" main-card">
+            <img src="dist/img/plastering.min.jpg" alt="Gładź" />
+            <div class="card-body">
+              <h2>Gładzie gipsowe/suche tynki</h2>
+              <p>
+                Suche tynki wykonuje się z płyt gipsowo kartonowych (płyt GK),
+                które potocznie nazywane są regipsami. Jak sama nazwa wskazuje
+                są one wykonane z gipsu i kartonu. Zastosowanie płyt GK jest
+                bardzo wszechstronne.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="moreRealizations">
+          <p class="moreRealiText">
+            Zobacz wszystkie usługi, które możemy dla Ciebie wykonać
+          </p>
+          <button
+            onclick="window.location.href='servicesPage.html'"
+            class="moreRealiBtn"
+          >
+            Więcej usług
+          </button>
+        </div>
+      </section>
+
+      <section class="adventure">
+        <hero class="hero-shadow"></hero>
+        <hero class="hero-text">
+          <h1>U Ciebie robimy jak u siebie</h1>
+        </hero>
+      </section>
+
+      <section class="realizations" id="realizations">
+        <div class="realizationsTitle">
+          <h1>Nasze realizacje</h1>
+        </div>
+        <div class="container realizationsBox">
+          <div class="realizationsBA">
+            <div class="before">
+              <h2 class="beforeTitle realiTitles">Przed</h2>
+              <img
+                class="beforeImg realiImages"
+                src="../dist/img/before.min.jpg"
+                alt="Łazienka przed remontem"
+              />
+            </div>
+            <div class="after">
+              <h2 class="afterTitle realiTitles">Po</h2>
+              <img
+                class="afterImg realiImages"
+                src="../dist/img/after.min.jpg"
+                alt="Łazienka po remoncie"
+              />
+            </div>
+          </div>
+          <div class="realizationsText">
+            <h1>Realizujemy projekty pod klucz i ponad oczekiwania</h1>
+            <p>Dbamy o każdy centymetr kwadratowy twojej inwestycji.</p>
+          </div>
+        </div>
+
+        <div class="moreRealizations">
+          <p class="moreRealiText">
+            Zobacz wiecej naszych realizacji w galerii zdjęć
+          </p>
+          <button onclick="window.location.href='galleryPage.html'" class="moreRealiBtn">Galeria</button>
+        </div>
+      </section>
+
+      
+
+      <section class="offers" id="offers">
+  <div class="textImg">
+    <div class="offers-text">
+      <h2>Kontakt</h2>
+      <p>Zapraszamy do kontaktu z nami!</p>
+      <p>
+        Jeżeli w Państwa planach jest generalny remont mieszkania, prace
+        wykończeniowe, przygotowanie mieszkania od stanu deweloperskiego do
+        zamieszkania lub wynajmu - jesteśmy do Państwa usług. Zajmujemy się
+        wykończeniem wnętrz od ponad 15 lat - co czyni nas jednymi z najdłużej
+        działających firm na terenie Krakowa. Decyzje dotyczące aranżacji
+        mieszkań nie są łatwe, dlatego mogą Państwo liczyć na nasze cenne
+        wskazówki oraz na DARMOWĄ wycenę robót wykończeniowych z dojazdem do
+        klienta.
+      </p>
+      <div class="more-offers">
+        <button
+          onclick="window.location.href='contactPage.html'"
+          class="btn-offers"
+        >
+          kontakt
+        </button>
+        <p class="more-text">
+          Kliknij w przycisk aby skontaktować się z nami oraz uzyskać darmową
+          wycenę
+        </p>
+      </div>
+    </div>
+
+    <div class="ladder-img">
+      <!-- <img src="../src/img/ladder.jpg" class="ladder" alt="" /> -->
+    </div>
+  </div>
+</section>
+
+    </main>
+    <div class="footer-container">
+  <footer class="footer">
+    <div class="footer-all">
+      <div class="footer-logo">
+        <a class="logo-link" href="#home">
+          <img src="../src/img/Venz.png" alt="logo Venz" />
+        </a>
+      </div>
+
+      <div class="button-footer nav-link">
+        <button onclick="scrollToHome()">
+          <i class="fa-solid fa-arrow-up"></i>Do góry
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-hr">
+      <hr />
+    </div>
+
+    <div class="footer-words">
+      <p>©2023 Venz Group</p>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>

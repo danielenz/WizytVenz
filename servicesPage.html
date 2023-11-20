@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venz</title>
+
+    <script
+      src="https://kit.fontawesome.com/0ab53e064e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+  </head>
+  <body>
+    <nav class="nav-desktop">
+      <a class="logo-link" href="#home">
+        <img src="../src/img/Venz.png" alt="logo Venz" />
+      </a>
+
+      <div class="nav-links">
+        <a
+          onclick="window.location.href='index.html'"
+          class="nav-link"
+          href="#home"
+          >Home</a
+        >
+        <a class="nav-link" onclick="scrollToSectionServices()" href="#services"
+          >Usługi</a
+        >
+        <a
+          class="nav-link navLink-offers"
+          href="#realizations"
+          onclick="scrollToSectionRealizations()"
+          >Realizacje</a
+        >
+        <a
+          class="nav-link navLink-offers"
+          href="#gallery"
+          onclick="window.location.href='galleryPage.html'"
+          >Galeria</a
+        >
+        <a
+          class="nav-link contact-link"
+          href="#contact"
+          onclick="window.location.href='contactPage.html'"
+          >Kontakt</a
+        >
+      </div>
+    </nav>
+
+    <nav class="nav-mobile">
+      <button class="burger">
+        <i class="fas fa-bars "></i>
+        <i class="fas fa-times hide"></i>
+      </button>
+      <ul>
+        <li>
+          <a href="#home" onclick="window.location.href='index.html'">Home</a>
+        </li>
+        <li>
+          <a
+            class="navLink-offers"
+            href="#services"
+            onclick="scrollToSectionServices()"
+            >Usługi</a
+          >
+        </li>
+        <li>
+          <a
+            class="navLink-offers"
+            href="#realizations"
+            onclick="scrollToSectionRealizations()"
+            >Realizacje</a
+          >
+        </li>
+        <li>
+          <a
+            class="navLink-offers"
+            href="#gallery"
+            onclick="window.location.href='galleryPage.html' "
+            >Galeria</a
+          >
+        </li>
+        <li>
+          <a href="#contact" onclick="window.location.href='contactPage.html' "
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section class="offersPage" id="services">
+      <div class="offersPageImg">
+        <div class="offersPageShadow"></div>
+      </div>
+
+      <div class="card-box">
+        <div class="card">
+          <img src="dist/img/płytki.min.jpg" alt="Układanie płytek" />
+          <div class="card-body">
+            <h2>Flizowanie/układanie płytek</h2>
+            <p>
+              Flizowanie to nic innego jak układanie płytek ceramicznych,
+              kamienia naturalnego lub sztucznego, a także innych materiałów
+              wykończeniowych. Prace obejmują przygotowanie podłoża, układanie
+              płytek, wyrównywanie powierzchni, zaprawianie fug i wykończenie.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="dist/img/malowanie.min.jpg" alt="Malowanie" />
+          <div class="card-body">
+            <h2>Malowanie</h2>
+            <p>
+              Malowanie to czynność nie tak prosta jak się wydaje, jednak jest
+                to jedna z naszych specjalności. Dobry malarz pokojowy to
+                podstawa udanego malowania. Bardzo ważnym jest zabezpieczyć
+                wszystkie elementy pomieszczenia takie jak meble, podłoga czy
+                też inne ściany przed plamami z farby.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="dist/img/plastering.min.jpg" alt="Gładź" />
+          <div class="card-body">
+            <h2>Gładzie gipsowe/suche tynki</h2>
+            <p>
+              Suche tynki wykonuje się z płyt gipsowo kartonowych (płyt GK),
+                które potocznie nazywane są regipsami. Jak sama nazwa wskazuje
+                są one wykonane z gipsu i kartonu. Zastosowanie płyt GK jest
+                bardzo wszechstronne.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="dist/img/doors.min.jpg" alt="montaż drzwi i okien" />
+          <div class="card-body">
+            <h2>Montaż drzwi i okien</h2>
+            <p>
+              Każdy generalny remont wymaga montażu nowych drzwi lub nawet wymiany okien. Potrafimy dostosować skrzydło drzwiowe nawet do krzywych futryn. Zaopatrujemy się w drzwi u polskiej solidnej firmy.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="dist/img/electric.min.jpg" alt="wymiana instalacji elektrycznych, wodno-kanalizacyjnych i grzewczych" />
+          <div class="card-body">
+            <h2>Wymiana instalacji elektrycznych, wodno-kanalizacyjnych i grzewczych</h2>
+            <p>
+              Podejmujemy się zarówno wymiany instalacji elektrycznych jak i kanalizacyjnych od A do Z. Montujemy ogrzewanie podłogowe. Rozprowadzamy instalacje grzewczą do ogrzewania centralnego w posadzce.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="dist/img/cement.min.jpg" alt="budowa ścianek działowych i sufitów podwieszanych" />
+          <div class="card-body">
+            <h2>Murowanie oraz stawianie ścianek działowych</h2>
+            <p>
+              Wyburzamy oraz stawiamy nowe ścianki od zera. Możemy zmienić układ każdego mieszkania poprzez wyburzenie ścianki i zamienieniem jej nową w innym miejscu - z mieszkania dwupokojowego bardzo łatwo zrobimy trzypokojowe.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="dist/img/sufit.min.jpg" alt="Układanie płytek" />
+          <div class="card-body">
+            <h2>Podwieszane sufity</h2>
+            <p>
+              Wykonujemy podwieszenie sufitu, które staje się co raz bardziej popularne w nowych mieszkaniach. Podwieszenie sufitu daje wiele zalet - od tych bardziej oczywistych jak rozporowadzenie światła w jakiekolwiek miejsce chcemy. Po oszczędzenie na rachunkach za ogrzewanie mieszkania, ponieważ ciepło zawsze trzyma się najwyżej w pomieszczeniu - obniżając sufit automatycznie zmniejszamy przestrzeń do ogrzania.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <footer class="footer">
+          <div class="footer-all">
+            <div class="footer-logo">
+              <a class="logo-link" href="#home">
+                <img src="../src/img/Venz.png" alt="logo Venz" />
+              </a>
+            </div>
+
+            <div class="button-footer nav-link">
+              <button onclick="scrollToHome()">
+                <i class="fa-solid fa-arrow-up"></i>Do góry
+              </button>
+            </div>
+          </div>
+
+          <div class="footer-hr">
+            <hr />
+          </div>
+
+          <div class="footer-words">
+            <p>©2023 Venz Group</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>

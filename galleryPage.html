@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venz</title>
+
+    <script
+      src="https://kit.fontawesome.com/0ab53e064e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav class="nav-desktop">
+      <a class="logo-link" href="#home">
+        <img src="../src/img/Venz.png" alt="logo Venz" />
+      </a>
+
+      <div class="nav-links">
+        <a
+          onclick="window.location.href='index.html'"
+          class="nav-link"
+          href="#home"
+          >Home</a
+        >
+        <a class="nav-link" onclick="scrollToSectionServices()" href="#services"
+          >Usługi</a
+        >
+        <a
+          class="nav-link navLink-offers"
+          href="#realizations"
+          onclick="scrollToSectionRealizations()"
+          >Realizacje</a
+        >
+        <a
+          class="nav-link navLink-offers"
+          href="#gallery"
+          onclick="window.location.href='galleryPage.html'"
+          >Galeria</a
+        >
+        <a
+          class="nav-link contact-link"
+          href="#contact"
+          onclick="window.location.href='contactPage.html'"
+          >Kontakt</a
+        >
+      </div>
+    </nav>
+
+    <nav class="nav-mobile">
+      <button class="burger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times hide"></i>
+      </button>
+      <ul>
+        <li>
+          <a href="#home" onclick="window.location.href='index.html'">Home</a>
+        </li>
+        <li>
+          <a
+            class="navLink-offers"
+            href="#services"
+            onclick="scrollToSectionServices()"
+            >Usługi</a
+          >
+        </li>
+        <li>
+          <a
+            class="navLink-offers"
+            href="#realizations"
+            onclick="scrollToSectionRealizations()"
+            >Realizacje</a
+          >
+        </li>
+        <li>
+          <a class="navLink-offers" href="#gallery">Galeria</a>
+        </li>
+        <li>
+          <a href="#contact" onclick="window.location.href='contactPage.html' "
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery-title">
+        <h1>Galeria</h1>
+      </div>
+
+      <div
+        class="elfsight-app-cba4f1e3-ce2e-45c6-8063-04036389f4dc slider"
+        data-elfsight-app-lazy
+      ></div>
+
+      
+        <div class="bathrooms">
+          <div class="bathrooms-title">
+            <h1>Łazienki</h1>
+          </div>
+
+          <div class="carusel">
+            <input type="radio" id="car0" name="car" checked="checked" />
+            <div></div>
+
+            <input type="radio" id="car1" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car0"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/after.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car2" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car1"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath1.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car3" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car2"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath2.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car4" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car3"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath3.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car5" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car4"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath4.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car6" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car5"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath5.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car7" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car6"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath6.min.jpg')"
+              ></div>
+            </div>
+
+
+            <input type="radio" id="car8" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car7"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath7.min.jpg')"
+              ></div>
+            </div>
+
+
+            <input type="radio" id="car9" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car8"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath8.min.jpg')"
+              ></div>
+            </div>
+
+
+            <input type="radio" id="car10" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car9"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath9.min.jpg')"
+              ></div>
+            </div>
+
+
+            <input type="radio" id="car11" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car10"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath10.min.jpg')"
+              ></div>
+            </div>
+
+            <input type="radio" id="car12" name="car" />
+            <div>
+              <label class="carusel__arrow" for="car11"></label>
+              <div
+                class="carusel__item"
+                style="background-image: url('../dist/img/bath11.min.jpg')"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="anotherImages">
+          <div class="another-title">
+            <h1>Inne</h1>
+          </div>
+
+          <div class="renovationImages">
+            <div class="image">
+              <img src="../dist/img/re1.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re2.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re3.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re4.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re5.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re6.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re7.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re8.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re9.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re10.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re11.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re12.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re13.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re14.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re15.min.jpg" alt="">
+            </div>
+            <div class="image">
+              <img src="../dist/img/re16.min.jpg" alt="">
+            </div>
+            
+          </div>
+        </div>
+    </section>
+
+<div class="footer-container">
+        <footer class="footer">
+          <div class="footer-all">
+            <div class="footer-logo">
+              <a class="logo-link" href="#home">
+                <img src="../src/img/Venz.png" alt="logo Venz" />
+              </a>
+            </div>
+
+            <div class="button-footer nav-link">
+              <button onclick="scrollToHome()">
+                <i class="fa-solid fa-arrow-up"></i>Do góry
+              </button>
+            </div>
+          </div>
+
+          <div class="footer-hr">
+            <hr />
+          </div>
+
+          <div class="footer-words">
+            <p>©2023 Venz Group</p>
+          </div>
+        </footer>
+      </div>
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>

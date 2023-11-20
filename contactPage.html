@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venz</title>
+
+    <script
+      src="https://kit.fontawesome.com/0ab53e064e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+  </head>
+
+  <body>
+    <nav class="nav-desktop">
+      <a class="logo-link" href="#home">
+        <img
+          src="../src/img/Venz.png"
+          alt="logo Venz"
+          onclick="window.location.href='index.html'"
+        />
+      </a>
+
+      <div class="nav-links">
+        <a
+          onclick="window.location.href='index.html'"
+          class="nav-link"
+          href="#home"
+          >Home</a
+        >
+        <a class="nav-link" onclick="scrollToSectionServices()" href="#services"
+          >Usługi</a
+        >
+        <a
+          class="nav-link navLink-offers"
+          href="#realizations"
+          onclick="scrollToSectionRealizations()"
+          >Realizacje</a
+        >
+        <a
+          class="nav-link navLink-offers"
+          href="#gallery"
+          onclick="window.location.href='galleryPage.html'"
+          >Galeria</a
+        >
+
+        <a
+          class="nav-link contact-link"
+          href="#contact"
+          onclick="window.location.href='contactPage.html'"
+          >Kontakt</a
+        >
+      </div>
+    </nav>
+
+    <nav class="nav-mobile">
+      <button class="burger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times hide"></i>
+      </button>
+      <ul>
+        <li>
+          <a href="#home" onclick="window.location.href='index.html'">Home</a>
+        </li>
+
+        <a class="nav-link" onclick="scrollToSectionServices()" href="#services"
+          >Usługi</a
+        >
+
+        <li>
+          <a
+            class="navLink-offers"
+            href="#realizations"
+            onclick="scrollToSectionRealizations()"
+            >Realizacje</a
+          >
+        </li>
+        <li>
+          <a
+            class="navLink-offers"
+            href="#gallery"
+            onclick="window.location.href='galleryPage.html'"
+            >Galeria</a
+          >
+        </li>
+        <li>
+          <a href="#contact">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="contactPage" id="contact">
+      <div class="contactUs-text">
+        <h1>skontaktuj się z nami</h1>
+      </div>
+
+      <div class="contact-all">
+        <div class="tma-box">
+          <div class="tel">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+48791300891"> +48 791 300 891</a>
+          </div>
+          <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:forest@biuro.pl">venz.firma@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="tma-box">
+          <div class="questions">
+            <h1 class="question-title">Masz jakieś pytania? </h1>
+            <h2 class="question-title2">Koniecznie wyślij do nas maila lub zadzwoń! </h2>
+            
+            
+
+            
+          </div>
+        </div>
+
+        <div class="tma-box">
+          <div class="questions">
+            <h1 class="question-title">Jak możemy ci pomóc?</h1>
+            <p class="question-paragraph">1.Przygotujemy dla Ciebie darmową wycenę.</p>
+            <p class="question-paragraph">2.Pomożemy Ci we wszystkich kwestiach remontu.</p>
+            <p class="question-paragraph">3.Zaplanujemy razem potrzebne rzeczy do wykonania.</p>
+            <p class="question-paragraph">4.Wykonamy listę rzeczy do zakupu.</p>
+            <p class="question-paragraph">5.Przygotujemy Twoje mieszaknie pod klucz!</p>
+          </div>
+        </div>
+
+        <div class="tma-box">
+          <div class="tel">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+48791300891"> +48 731 276 070</a>
+          </div>
+          <div class="mail">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:forest@biuro.pl">venz.firma@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-container">
+  <footer class="footer">
+    <div class="footer-all">
+      <div class="footer-logo">
+        <a class="logo-link" href="#home">
+          <img src="../src/img/Venz.png" alt="logo Venz" />
+        </a>
+      </div>
+
+      <div class="button-footer nav-link">
+        <button onclick="scrollToHome()">
+          <i class="fa-solid fa-arrow-up"></i>Do góry
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-hr">
+      <hr />
+    </div>
+
+    <div class="footer-words">
+      <p>©2023 Venz Group</p>
+    </div>
+  </footer>
+</div>
+
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>
